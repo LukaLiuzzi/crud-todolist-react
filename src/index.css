@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+html {
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #9411578c;
+	width: 95%;
+	margin: 0 auto;
+}
+
+input {
+	background-color: #94115790;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 0.5rem;
+	font-weight: bold;
+	margin: 0.5rem;
+	width: 95%;
+	max-width: 40rem;
+	color: black;
+}
+input::placeholder {
+	color: #00000060;
+}
+input:focus {
+	outline: none;
+}
+
+button {
+	background-color: #94115750;
+	border-radius: 3px;
+	border: none;
+	padding: 0.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #94115740;
+	outline: #941157 solid 1px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form button {
+	width: 6rem;
+	margin: 7px auto;
+}
+
+.table {
+	width: 95%;
+	max-width: 90%;
+	margin: 0 auto;
+}
+table {
+	border-collapse: collapse;
+	margin: auto;
+	text-align: center;
+}
+table tr {
+	border-bottom: 1px solid rgb(92, 89, 89);
+}
+
+table td {
+	padding: 0 1rem;
+}
+
+table td:nth-child(1) {
+	color: #490350;
+	font-weight: 700;
+}
+table thead th {
+	padding: 0 1rem;
 }
